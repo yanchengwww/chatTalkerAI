@@ -584,13 +584,13 @@ a {
   text-decoration: none;
 }
 
-.wrap {
+.pricing-wrap {
   max-width: 1366px;
   margin: 0 auto;
   position: relative;
 }
 
-.title {
+.pricing-title {
   text-align: center;
   font-size: 32px;
   line-height: 46px;
@@ -598,13 +598,13 @@ a {
 }
 
 @media (max-width: 375px) {
-  .title {
+  .pricing-title {
     font-size: 28px;
     line-height: 40px;
     padding: 0 20px;
   }
 }
-.header {
+.pricing-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -612,7 +612,7 @@ a {
   margin: 0 auto;
   max-width: 1088px;
 }
-.header .logo {
+.pricing-header .logo {
   background-image: url(../image/logo.png);
   background-size: cover;
   display: block;
@@ -622,7 +622,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
 }
-.header .planCost {
+.pricing-header .planCost {
   color: white;
   background: #FF5D50;
   font-size: 16px;
@@ -630,7 +630,7 @@ a {
   padding: 8px 32px;
   border-radius: 22px;
 }
-.header .planCost:hover {
+.pricing-header .planCost:hover {
   background: #56C4C5;
 }
 
@@ -653,18 +653,18 @@ a {
   z-index: -1;
 }
 
-.banner {
+.pricing-banner {
   margin: 116px auto 0;
   padding: 0 20px;
   max-width: 1088px;
 }
-.banner .slogan h2 {
+.pricing-banner .slogan h2 {
   font-size: 48px;
   font-weight: bold;
   line-height: 70px;
   margin-top: 8px;
 }
-.banner .slogan h4 {
+.pricing-banner .slogan h4 {
   font-size: 20px;
   line-height: 29px;
   margin-top: 16px;
@@ -693,12 +693,12 @@ a {
 }
 
 @media (max-width: 375px) {
-  .header {
+  .pricing-header {
     padding: 16px 20px;
     border-bottom: 2px solid #FFD153;
     background: white;
   }
-  .header .logo {
+  .pricing-header .logo {
     width: 130px;
     height: 24px;
   }
@@ -714,15 +714,15 @@ a {
     height: 567px;
   }
 
-  .banner {
+  .pricing-banner {
     margin-top: 40px;
     width: 90%;
   }
-  .banner .slogan h2 {
+  .pricing-banner .slogan h2 {
     font-size: 32px;
     line-height: 46px;
   }
-  .banner .slogan h4 {
+  .pricing-banner .slogan h4 {
     font-size: 16px;
     line-height: 24px;
   }
@@ -738,7 +738,7 @@ a {
     top: 230vh;
   }
 }
-.content {
+.pricing-content {
   max-width: 1088px;
   margin: 0 auto;
 }
@@ -978,7 +978,7 @@ a {
     background-size: 16px;
   }
 }
-.footer .right {
+.pricing-footer .right {
   background: #F5F5F5;
   padding: 16px;
   text-align: center;
