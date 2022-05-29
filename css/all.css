@@ -936,12 +936,17 @@ a {
 .QA-item .QA-title {
   font-size: 18px;
   line-height: 28px;
+  color: #221E1F;
 }
 .QA-item .QA-answer {
   font-size: 16px;
   line-height: 32px;
   color: #747474;
   margin-top: 24px;
+  display: none;
+}
+.QA-item .QA-answer.active {
+  display: block;
 }
 .QA-item .QA-plus {
   background-image: url(../image/icon_plus.svg);
@@ -955,9 +960,9 @@ a {
   background-size: 20px;
   background-repeat: no-repeat;
 }
-
-.blue {
+.QA-item .blue {
   color: #56C4C5;
+  font-weight: bold;
 }
 
 @media (max-width: 375px) {

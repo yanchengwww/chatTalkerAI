@@ -79,6 +79,7 @@ a{
     background-color: #F7F9FD;
     z-index: -1;
 }
+//主視覺
 .pricing-banner{
     margin: 116px auto 0;
     padding: 0 20px;
@@ -97,6 +98,7 @@ a{
         }
     }
 }
+//TOP鍵
 .gotop{
     position: fixed;
     right: 3%;
@@ -160,6 +162,7 @@ a{
         top: 230vh;
     }
 }
+//選擇方案
 .pricing-content{
     max-width: 1088px;
     margin: 0 auto;
@@ -341,6 +344,7 @@ a{
         }
     }
 }
+//常見問題
 .QA-list{
     margin: 48px auto 100px;
     padding: 0 16px;
@@ -353,12 +357,17 @@ a{
     .QA-title{
         font-size: 18px;
         line-height: 28px;
+        color: #221E1F;
     }
     .QA-answer{
         font-size: 16px;
         line-height: 32px;
         color: #747474;
         margin-top: 24px;
+        display: none;
+    }
+    .QA-answer.active{
+        display: block;
     }
     .QA-plus{
         background-image: url(../image/icon_plus.svg);
@@ -372,9 +381,10 @@ a{
         background-size: 20px;
         background-repeat: no-repeat;
     }
-}
-.blue{
-    color: $blue;
+    .blue{
+        color: $blue;
+        font-weight: bold;
+    }
 }
 @media (max-width: 375px){
     .QA-item{
@@ -394,6 +404,7 @@ a{
         }
     }
 }
+//footer
 .pricing-footer{
     .right{
         background: #F5F5F5;

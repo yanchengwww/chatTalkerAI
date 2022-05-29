@@ -111,6 +111,7 @@ sub{
         left: 50px;
     }
 }
+//主視覺
 .banner{
     display: flex;
     justify-content: space-between;
@@ -142,6 +143,7 @@ sub{
         height: 534px;
     }
 }
+//TOP鍵
 .gotop{
     position: fixed;
     right: 3%;
@@ -229,6 +231,7 @@ sub{
     max-width: 1088px;
     margin: 0 auto;
 }
+//3大平台
 .platform{
     margin: 217px 60px 0;
 }
@@ -273,6 +276,7 @@ sub{
         }
     }
 }
+//4個角色
 .role{
     margin: 100px auto;    
 }
@@ -308,6 +312,7 @@ sub{
         flex-wrap: wrap;
     }
 }
+//了解客戶輪廓
 .features{
     display: flex;
     justify-content: space-between;
@@ -396,6 +401,7 @@ sub{
         }
     }
 }
+//好評如潮
 .evaluation{
     margin-top: 72px;
 }
@@ -471,6 +477,7 @@ sub{
         }
     }
 }
+//footer
 .footer{
     background-image: url(../image/bg.png);
     background-position: top center;
