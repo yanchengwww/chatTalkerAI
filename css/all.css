@@ -75,9 +75,9 @@ sub {
 }
 
 .wrap {
-  max-width: 1366px;
+  max-width: 1120px;
+  padding: 0 16px;
   margin: 0 auto;
-  position: relative;
 }
 
 .title {
@@ -111,8 +111,8 @@ sub {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 24px 20px;
-  max-width: 1088px;
+  padding: 24px 0;
+  max-width: 1120px;
 }
 .header .logo {
   background-image: url(../image/logo.png);
@@ -176,8 +176,7 @@ sub {
   justify-content: space-between;
   align-items: center;
   margin: 54px auto 0;
-  padding: 0 20px;
-  max-width: 1088px;
+  max-width: 1120px;
 }
 .banner .slogan h3 {
   color: #56C4C5;
@@ -205,14 +204,23 @@ sub {
   position: fixed;
   right: 3%;
   bottom: 3%;
+  z-index: 99;
 }
 .gotop:hover {
   opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header {
     padding: 16px 20px;
+  }
+
+  .banner {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .header {
     border-bottom: 2px solid #FFD153;
   }
 
@@ -221,13 +229,19 @@ sub {
   }
   .background .blueBG-top {
     height: 300px;
-    top: 200vh;
+    top: 105vh;
+  }
+  .background .blueBG-bottom {
+    top: 255vh;
+  }
+  .background .orangeBG-bottom {
+    top: 375vh;
+    left: 0;
   }
 
   .banner {
     display: block;
     margin-top: 20px;
-    width: 90%;
   }
   .banner .home {
     width: 100%;
@@ -247,19 +261,18 @@ sub {
   .background .blueBG-top {
     width: 49px;
     height: 126px;
-    top: 124vh;
+    top: 110vh;
   }
   .background .blueBG-bottom {
     width: 88px;
     height: 135px;
-    top: 553vh;
+    top: 472vh;
   }
   .background .orangeBG-bottom {
     background-position: top right;
     width: 77px;
     height: 153px;
-    top: 866vh;
-    left: 0;
+    top: 737vh;
   }
 
   .banner .slogan h3 {
@@ -280,11 +293,6 @@ sub {
     height: 50px;
   }
 }
-.content {
-  max-width: 1088px;
-  margin: 0 auto;
-}
-
 .platform {
   margin: 217px 60px 0;
 }
@@ -526,6 +534,19 @@ sub {
   width: 16px;
 }
 
+.owl-dots {
+  margin-bottom: 100px;
+}
+
+.owl-stage {
+  margin: 0 0 5px 5px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot.active span {
+  background: #FFD153;
+  width: 16px;
+}
+
 @media (max-width: 1024px) {
   .d-p-n {
     display: none;
@@ -541,9 +562,12 @@ sub {
 }
 .footer {
   background-image: url(../image/bg.png);
+  background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
   text-align: center;
   padding-top: 260px;
+  height: 503px;
 }
 .footer .footer-slogan {
   margin-bottom: 48px;
@@ -560,34 +584,17 @@ sub {
 @media (max-width: 375px) {
   .footer {
     background-image: url(../image/bg-footer.png);
-    background-repeat: no-repeat;
+    height: 461px;
   }
   .footer .footer-slogan {
     font-size: 24px;
     line-height: 35px;
   }
 }
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Noto Sans TC", sans-serif;
-}
-
-.img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
 .pricing-wrap {
-  max-width: 1366px;
+  max-width: 1120px;
+  padding: 0 16px;
   margin: 0 auto;
-  position: relative;
 }
 
 .pricing-title {
@@ -608,9 +615,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 20px;
+  padding: 24px 0;
   margin: 0 auto;
-  max-width: 1088px;
+  max-width: 1120px;
 }
 .pricing-header .logo {
   background-image: url(../image/logo.png);
@@ -655,8 +662,7 @@ a {
 
 .pricing-banner {
   margin: 116px auto 0;
-  padding: 0 20px;
-  max-width: 1088px;
+  max-width: 1120px;
 }
 .pricing-banner .slogan h2 {
   font-size: 48px;
@@ -674,6 +680,7 @@ a {
   position: fixed;
   right: 3%;
   bottom: 3%;
+  z-index: 99;
 }
 .gotop:hover {
   opacity: 0.8;
@@ -689,9 +696,18 @@ a {
   width: 94px;
   height: 361px;
   left: 0;
-  top: 128vh;
+  top: 133vh;
 }
 
+@media (max-width: 1024px) {
+  .pricing-header {
+    padding: 16px 20px;
+  }
+
+  .pricing-banner {
+    width: 90%;
+  }
+}
 @media (max-width: 375px) {
   .pricing-header {
     padding: 16px 20px;
@@ -733,16 +749,11 @@ a {
   }
 
   .orangeBall {
-    width: 80px;
-    height: 175px;
-    top: 230vh;
+    width: 100px;
+    height: 230px;
+    top: 193vh;
   }
 }
-.pricing-content {
-  max-width: 1088px;
-  margin: 0 auto;
-}
-
 .plan-choose {
   display: flex;
   justify-content: center;
@@ -823,6 +834,9 @@ a {
 .plan-list .plan-action a:hover {
   background: #FF5D50;
 }
+.plan-list sub {
+  vertical-align: baseline;
+}
 
 .plan-equal {
   display: flex;
@@ -830,7 +844,7 @@ a {
   align-items: center;
 }
 .plan-equal .equal {
-  margin: 0 17px;
+  margin: 0 5px;
   font-size: 25px;
 }
 .plan-equal .subscriber, .plan-equal .subscriber-cost {
@@ -868,6 +882,7 @@ a {
     width: 100%;
   }
   .plan-list .plan-item {
+    width: 70%;
     margin: 0 auto;
   }
   .plan-list .plan-action {
@@ -886,7 +901,7 @@ a {
   }
 
   .plan-list .plan-item {
-    width: 90%;
+    width: 100%;
   }
   .plan-list .plan-item .plan-text {
     padding: 32px 16px;
@@ -911,7 +926,7 @@ a {
     font-size: 12px;
   }
   .plan-equal .subscriber, .plan-equal .subscriber-cost {
-    padding: 16px 24px;
+    padding: 16px;
   }
   .plan-equal .subscriber p, .plan-equal .subscriber-cost p {
     font-size: 28px;

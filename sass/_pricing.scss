@@ -1,23 +1,7 @@
-$blue: #56C4C5;
-
-*,*::after,*::before{
-    box-sizing: border-box;
-    //outline: 1px solid black;
-}
-body{
-    font-family: 'Noto Sans TC', sans-serif;
-}
-.img{
-    max-width: 100%;
-    height: auto;
-}
-a{
-    text-decoration: none;
-}
 .pricing-wrap{
-    max-width: 1366px;
+    max-width: 1120px;
+    padding: 0 16px;
     margin: 0 auto;
-    position: relative;
 }
 .pricing-title{
     text-align: center;
@@ -32,13 +16,14 @@ a{
         padding: 0 20px;
     }
 }
+//header
 .pricing-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 20px;
+    padding: 24px 0;
     margin: 0 auto;
-    max-width: 1088px;
+    max-width: 1120px;
     .logo{
         background-image: url(../image/logo.png);
         background-size: cover;
@@ -82,8 +67,7 @@ a{
 //主視覺
 .pricing-banner{
     margin: 116px auto 0;
-    padding: 0 20px;
-    max-width: 1088px;
+    max-width: 1120px;
     .slogan{
         h2{
             font-size: 48px;
@@ -103,10 +87,12 @@ a{
     position: fixed;
     right: 3%;
     bottom: 3%;
+    z-index: 99;
     &:hover{
         opacity: 0.8;
     }
 }
+//圓球背景
 .orangeBall{
     background-image: url(../image/ball03.svg);
     background-position: top right;
@@ -117,7 +103,15 @@ a{
     width: 94px;
     height: 361px;
     left: 0;
-    top: 128vh;
+    top: 133vh;
+}
+@media (max-width: 1024px){
+    .pricing-header{
+        padding: 16px 20px;
+    }
+    .pricing-banner{
+        width: 90%;
+    }
 }
 @media (max-width: 375px){
     .pricing-header{
@@ -157,16 +151,12 @@ a{
         height: 50px;
     }
     .orangeBall{
-        width: 80px;
-        height: 175px;
-        top: 230vh;
+        width: 100px;
+        height: 230px;
+        top: 193vh;
     }
 }
 //選擇方案
-.pricing-content{
-    max-width: 1088px;
-    margin: 0 auto;
-}
 .plan-choose{
     display: flex;
     justify-content: center;
@@ -245,13 +235,16 @@ a{
             }
         }
     }
+    sub{
+        vertical-align: baseline;
+    }
 }
 .plan-equal{
     display: flex;
     justify-content: center;
     align-items: center;
     .equal{
-        margin: 0 17px;
+        margin: 0 5px;
         font-size: 25px;
     }
     .subscriber,.subscriber-cost{
@@ -289,6 +282,7 @@ a{
         display: block;
         width: 100%;
         .plan-item{
+            width: 70%;
             margin: 0 auto;
         }
         .plan-action{
@@ -308,7 +302,7 @@ a{
     }
     .plan-list{
         .plan-item{
-            width: 90%;
+            width: 100%;
             .plan-text{
                 padding: 32px 16px;
             }
@@ -332,7 +326,7 @@ a{
             font-size: 12px;
         }
         .subscriber,.subscriber-cost{
-            padding: 16px 24px;   
+            padding: 16px;   
             p{
                 font-size: 28px;
                 line-height: 32px;

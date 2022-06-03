@@ -1,26 +1,7 @@
-$blue: #56C4C5;
-
-*,*::after,*::before{
-    box-sizing: border-box;
-    //outline: 1px solid black;
-}
-body{
-    font-family: 'Noto Sans TC', sans-serif;
-}
-.img{
-    max-width: 100%;
-    height: auto;
-}
-a{
-    text-decoration: none;
-}
-sub{
-    vertical-align: sub;
-}
 .wrap{
-    max-width: 1366px;
+    max-width: 1120px;
+    padding: 0 16px;
     margin: 0 auto;
-    position: relative;
 }
 .title{
     text-align: center;
@@ -45,13 +26,14 @@ sub{
         padding: 0 20px;
     }
 }
+//header
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 24px 20px;
-    max-width: 1088px;
+    padding: 24px 0;
+    max-width: 1120px;
     .logo{
         background-image: url(../image/logo.png);
         background-size: cover;
@@ -75,6 +57,7 @@ sub{
         }
     }
 }
+//圓球背景
 .background{
     .p-a-1{
         position: absolute;
@@ -117,8 +100,7 @@ sub{
     justify-content: space-between;
     align-items: center;
     margin: 54px auto 0;
-    padding: 0 20px;
-    max-width: 1088px;
+    max-width: 1120px;
     .slogan{
         h3{
             color: $blue;
@@ -148,13 +130,21 @@ sub{
     position: fixed;
     right: 3%;
     bottom: 3%;
+    z-index: 99;
     &:hover{
         opacity: 0.8;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 1024px){
     .header{
         padding: 16px 20px;
+    }
+    .banner{
+        width: 90%;
+    }
+}
+@media (max-width: 768px){
+    .header{
         border-bottom: 2px solid #FFD153;
     }
     .background{
@@ -163,13 +153,19 @@ sub{
         }
         .blueBG-top{
             height: 300px;
-            top: 200vh;
+            top: 105vh;
+        }
+        .blueBG-bottom{
+            top: 255vh;
+        }
+        .orangeBG-bottom{
+            top: 375vh;
+            left: 0;
         }
     }
     .banner{
         display: block;
         margin-top: 20px;
-        width: 90%;
         .home{
             width: 100%;
             height: auto;
@@ -191,19 +187,18 @@ sub{
         .blueBG-top{
             width: 49px;
             height: 126px;
-            top: 124vh;
+            top: 110vh;
         }
         .blueBG-bottom{
             width: 88px;
             height: 135px;
-            top: 553vh;
+            top: 472vh;
         }
         .orangeBG-bottom{
             background-position: top right;
             width: 77px;
             height: 153px;
-            top: 866vh;
-            left: 0;
+            top: 737vh;
         }
     }
     .banner{
@@ -226,10 +221,6 @@ sub{
         width: 50px;
         height: 50px;
     }
-}
-.content{
-    max-width: 1088px;
-    margin: 0 auto;
 }
 //3大平台
 .platform{
@@ -464,6 +455,17 @@ sub{
         width: 16px;
     }
 }
+.owl-dots{
+    margin-bottom: 100px;
+}
+.owl-stage{
+    margin: 0 0 5px 5px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot.active span{
+    background: #FFD153;
+    width: 16px;
+    
+}
 @media (max-width: 1024px){
     .d-p-n{
         display: none;
@@ -480,9 +482,12 @@ sub{
 //footer
 .footer{
     background-image: url(../image/bg.png);
+    background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover;
     text-align: center;
     padding-top: 260px;
+    height: 503px;
     .footer-slogan{
         margin-bottom: 48px;
         font-size: 32px;
@@ -498,7 +503,7 @@ sub{
 @media (max-width: 375px){
     .footer{
         background-image: url(../image/bg-footer.png) ;
-        background-repeat: no-repeat;
+        height: 461px;
         .footer-slogan{
             font-size: 24px;
             line-height: 35px;

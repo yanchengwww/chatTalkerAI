@@ -47,3 +47,24 @@ table {
 	border-spacing: 0;
 }
 /*css reset end*/
+
+$blue: #56C4C5;
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    //outline: 1px solid black;
+}
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+sub{
+    vertical-align: sub;
+}
+

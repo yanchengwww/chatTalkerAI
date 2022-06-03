@@ -11,201 +11,278 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- owl.carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    </link>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    </link>
     <link rel="stylesheet" href="./css/all.css">
 </head>
 
 <body>
-    <div class="wrap">
-        <header class="header">
-            <h1><a class="logo" href="#">chatTalker</a></h1>
-            <a class="planCost" href="pricing.html">方案費用</a>
-        </header>
-        <div class="background">
-            <div class="orangeBG-top p-a-1"></div>
-            <div class="blueBG-top p-a-1"></div>     
-            <div class="blueBG-bottom p-a-1"></div>
-            <div class="orangeBG-bottom p-a-1"></div>
+    <!--header-->
+    <header class="header">
+        <h1><a class="logo" href="#">chatTalker</a></h1>
+        <a class="planCost" href="pricing.html">方案費用</a>
+    </header>
+    <!--圓球背景-->
+    <div class="background">
+        <div class="orangeBG-top p-a-1"></div>
+        <div class="blueBG-top p-a-1"></div>
+        <div class="blueBG-bottom p-a-1"></div>
+        <div class="orangeBG-bottom p-a-1"></div>
+    </div>
+    <!--主視覺-->
+    <section class="banner">
+        <div class="slogan">
+            <h3>ChatTalker 最全面的聊天機器人</h3>
+            <h2>你愛我像誰？<br>扮演什麼角色我都會</h2>
+            <h4>Facebook、Instagram、LINE 聊天機器人解決方案</h4>
         </div>
-        <section class="banner">
-            <div class="slogan">
-                <h3>ChatTalker 最全面的聊天機器人</h3>
-                <h2>你愛我像誰？<br>扮演什麼角色我都會</h2>
-                <h4>Facebook、Instagram、LINE 聊天機器人解決方案</h4>
-            </div>
-            <img class="home"
-                src="image/home.svg"
-                alt="banner">
+        <img class="home" src="image/home.svg" alt="banner">
+    </section>
+    <main class="wrap">
+        <!--3大平台-->
+        <section class="platform">
+            <h2 class="title">三大平台，我來搞定</h2>
+            <ul class="platform-list">
+                <li class="platform-item">
+                    <img class="platform-img" src="image/messenger.svg" alt="messenger">
+                    <h3 class="platform-title">Facebook Messenger</h3>
+                    <p class="platform-text">結合粉絲專頁，提高粉絲互動率<br>有效經營品牌社群</p>
+                </li>
+                <li class="platform-item">
+                    <img class="platform-img" src="image/line.svg" alt="line">
+                    <h3 class="platform-title">LINE 官方帳號</h3>
+                    <p class="platform-text">融入日常生活，精準傳遞品牌資訊<br>打造個人化專屬服務</p>
+                </li>
+                <li class="platform-item">
+                    <img class="platform-img" src="image/instagram.svg" alt="instagram">
+                    <h3 class="platform-title">Instagram 商業帳號</h3>
+                    <p class="platform-text">貼近粉絲，提升品牌自然聲量<br>行銷、抽獎一站完成</p>
+                </li>
+            </ul>
         </section>
-        <main class="content">
-            <section class="platform">
-                <h2 class="title">三大平台，我來搞定</h2>
-                <ul class="platform-list">
-                    <li class="platform-item">
-                        <img class="platform-img"
-                            src="image/messenger.svg"
-                            alt="messenger">
-                        <h2 class="platform-title">Facebook Messenger</h2>
-                        <p class="platform-text">結合粉絲專頁，提高粉絲互動率<br>有效經營品牌社群</p>
-                    </li>
-                    <li class="platform-item">
-                        <img class="platform-img"
-                            src="image/line.svg"
-                            alt="line">
-                        <h2 class="platform-title">LINE 官方帳號</h2>
-                        <p class="platform-text">融入日常生活，精準傳遞品牌資訊<br>打造個人化專屬服務</p>
-                    </li>
-                    <li class="platform-item">
-                        <img class="platform-img"
-                            src="image/instagram.svg"
-                            alt="instagram">
-                        <h2 class="platform-title">Instagram 商業帳號</h2>
-                        <p class="platform-text">貼近粉絲，提升品牌自然聲量<br>行銷、抽獎一站完成</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="role">
-                <h2 class="title">任何的角色，我都能給</h2>
-                <p class="sub-title">量身打造您想要的專屬服務，幫助您迅速判斷成效、並加快決策</p>
-                <ul class="role-list">
-                    <li class="role-item">
-                        <img class="role-img"
-                            src="image/ch01.svg"
-                            alt="活動主">
-                        <h2 class="role-title">活動主</h2>
-                        <p class="role-text">用戶數位足跡掌握在手<br>精準取得客戶輪廓，提供分析</p>
-                    </li>
-                    <li class="role-item">
-                        <img class="role-img"
-                            src="image/ch02.svg"
-                            alt="創作者">
-                        <h2 class="role-title">創作者</h2>
-                        <p class="role-text">自由設計互動腳本<br>輕鬆整合各項數據</p>
-                    </li>
-                    <li class="role-item">
-                        <img class="role-img"
-                            src="image/ch03.svg"
-                            alt="企業品牌">
-                        <h2 class="role-title">企業品牌</h2>
-                        <p class="role-text">多元資料整合，做出服務差異化<br>幫助企業加速決策</p>
-                    </li>
-                    <li class="role-item">
-                        <img class="role-img"
-                            src="image/ch04.svg"
-                            alt="其他">
-                        <h2 class="role-title">其他</h2>
-                        <p class="role-text">創造更多可能...</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="features">
-                <ul class="features-list">
-                    <li class="features-item">
-                        <img class="features-img"
-                            src="image/icon01.svg"
-                            alt="無敵轉換術">
-                        <h2 class="features-title">無敵轉換術</h2>
-                        <p class="features-text">精準掌握客群來源<br>分析用戶轉化流程</p>
-                    </li>
-                    <li class="features-item">
-                        <img class="features-img"
-                            src="image/icon02.svg"
-                            alt="聊天機器人">
-                        <h2 class="features-title">聊天機器人</h2>
-                        <p class="features-text">66款聊天機器人模組<br>自由設計聊天流程</p>
-                    </li>
-                    <li class="features-item">
-                        <img class="features-img"
-                            src="image/icon03.svg"
-                            alt="一站式訊息中心">
-                        <h2 class="features-title">一站式訊息中心</h2>
-                        <p class="features-text">整合Messenger、LINE和IG三大平台訊息</p>
-                    </li>
-                    <li class="features-item">
-                        <img class="features-img"
-                            src="image/icon04.svg"
-                            alt="群發訊息">
-                        <h2 class="features-title">群發訊息</h2>
-                        <p class="features-text">自由選定特定受眾<br>精準推送群發訊息</p>
-                    </li>
-                </ul>
-                <div class="features-cost">
-                    <h2>快速了解客戶輪廓<br>建立品牌流量池</h2>
-                    <p>深入用戶日常，成為用戶貼身好友<br>精準傳遞品牌資訊，打造個人化專屬服務<br>不知不覺深入用戶生活，成為用戶貼心的好朋朋:D</p>
-                    <a class="featuresCost" href="pricing.html">方案費用</a>
-                </div>
-            </section>
-            <section class="evaluation">
-                <h2 class="title">好評如潮</h2>
-                <ul class="evaluation-list">
-                    <li class="evaluation-item">
-                        <img class="user"
-                            src="image/user01.jpg"
-                            alt="Lina 執行長">
-                        <p class="user-text">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
-                        <h2 class="user-company">清心寡慾設計公司</h2>
-                        <div class="user-star">
-                            <h3 class="user-name">Lina 執行長</h3>
-                            <ul class="star">
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="evaluation-item d-p-n">
-                        <img class="user"
-                            src="image/user02.jpg"
-                            alt="Zoe 活動長">
-                        <p class="user-text">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
-                        <h2 class="user-company">subwhat 行銷公司</h2>
-                        <div class="user-star">
-                            <h3 class="user-name">Zoe 活動長</h3>
-                            <ul class="star">
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="evaluation-item d-p-n">
-                        <img class="user"
-                            src="image/user03.jpg"
-                            alt="HowBig">
-                        <p class="user-text">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
-                        <h2 class="user-company">油土伯</h2>
-                        <div class="user-star">
-                            <h3 class="user-name">HowBig</h3>
-                            <ul class="star">
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                <div class="dot">
+        <!--4個角色-->
+        <section class="role">
+            <h2 class="title">任何的角色，我都能給</h2>
+            <p class="sub-title">量身打造您想要的專屬服務，幫助您迅速判斷成效、並加快決策</p>
+            <ul class="role-list">
+                <li class="role-item">
+                    <img class="role-img" src="image/ch01.svg" alt="活動主">
+                    <h3 class="role-title">活動主</h3>
+                    <p class="role-text">用戶數位足跡掌握在手<br>精準取得客戶輪廓，提供分析</p>
+                </li>
+                <li class="role-item">
+                    <img class="role-img" src="image/ch02.svg" alt="創作者">
+                    <h3 class="role-title">創作者</h3>
+                    <p class="role-text">自由設計互動腳本<br>輕鬆整合各項數據</p>
+                </li>
+                <li class="role-item">
+                    <img class="role-img" src="image/ch03.svg" alt="企業品牌">
+                    <h3 class="role-title">企業品牌</h3>
+                    <p class="role-text">多元資料整合，做出服務差異化<br>幫助企業加速決策</p>
+                </li>
+                <li class="role-item">
+                    <img class="role-img" src="image/ch04.svg" alt="其他">
+                    <h3 class="role-title">其他</h3>
+                    <p class="role-text">創造更多可能...</p>
+                </li>
+            </ul>
+        </section>
+        <!--了解客戶輪廓-->
+        <section class="features">
+            <ul class="features-list">
+                <li class="features-item">
+                    <img class="features-img" src="image/icon01.svg" alt="無敵轉換術">
+                    <h3 class="features-title">無敵轉換術</h3>
+                    <p class="features-text">精準掌握客群來源<br>分析用戶轉化流程</p>
+                </li>
+                <li class="features-item">
+                    <img class="features-img" src="image/icon02.svg" alt="聊天機器人">
+                    <h3 class="features-title">聊天機器人</h3>
+                    <p class="features-text">66款聊天機器人模組<br>自由設計聊天流程</p>
+                </li>
+                <li class="features-item">
+                    <img class="features-img" src="image/icon03.svg" alt="一站式訊息中心">
+                    <h3 class="features-title">一站式訊息中心</h3>
+                    <p class="features-text">整合Messenger、LINE和IG三大平台訊息</p>
+                </li>
+                <li class="features-item">
+                    <img class="features-img" src="image/icon04.svg" alt="群發訊息">
+                    <h3 class="features-title">群發訊息</h3>
+                    <p class="features-text">自由選定特定受眾<br>精準推送群發訊息</p>
+                </li>
+            </ul>
+            <!--流量池-->
+            <div class="features-cost">
+                <h2>快速了解客戶輪廓<br>建立品牌流量池</h2>
+                <p>深入用戶日常，成為用戶貼身好友<br>精準傳遞品牌資訊，打造個人化專屬服務<br>不知不覺深入用戶生活，成為用戶貼心的好朋朋:D</p>
+                <a class="featuresCost" href="pricing.html">方案費用</a>
+            </div>
+        </section>
+
+        <!--好評如潮-->
+        <section class="evaluation">
+            <h2 class="title">好評如潮</h2>
+            <ul class="evaluation-list owl-carousel owl-theme">
+                <li class="evaluation-item">
+                    <img class="user" src="image/user01.jpg" alt="Lina 執行長">
+                    <p class="user-text">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
+                    <h3 class="user-company">清心寡慾設計公司</h3>
+                    <div class="user-star">
+                        <h3 class="user-name">Lina 執行長</h3>
+                        <ul class="star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="evaluation-item">
+                    <img class="user" src="image/user02.jpg" alt="Zoe 活動長">
+                    <p class="user-text">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
+                    <h3 class="user-company">subwhat 行銷公司</h3>
+                    <div class="user-star">
+                        <h3 class="user-name">Zoe 活動長</h3>
+                        <ul class="star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="evaluation-item">
+                    <img class="user" src="image/user03.jpg" alt="HowBig">
+                    <p class="user-text">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
+                    <h3 class="user-company">油土伯</h3>
+                    <div class="user-star">
+                        <h3 class="user-name">HowBig</h3>
+                        <ul class="star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="evaluation-item">
+                    <img class="user" src="image/user01.jpg" alt="Lina 執行長">
+                    <p class="user-text">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
+                    <h3 class="user-company">清心寡慾設計公司</h3>
+                    <div class="user-star">
+                        <h3 class="user-name">Lina 執行長</h3>
+                        <ul class="star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="evaluation-item">
+                    <img class="user" src="image/user02.jpg" alt="Zoe 活動長">
+                    <p class="user-text">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
+                    <h3 class="user-company">subwhat 行銷公司</h3>
+                    <div class="user-star">
+                        <h3 class="user-name">Zoe 活動長</h3>
+                        <ul class="star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="evaluation-item">
+                    <img class="user" src="image/user03.jpg" alt="HowBig">
+                    <p class="user-text">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
+                    <h3 class="user-company">油土伯</h3>
+                    <div class="user-star">
+                        <h3 class="user-name">HowBig</h3>
+                        <ul class="star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="evaluation-item">
+                    <img class="user" src="image/user01.jpg" alt="Lina 執行長">
+                    <p class="user-text">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
+                    <h3 class="user-company">清心寡慾設計公司</h3>
+                    <div class="user-star">
+                        <h3 class="user-name">Lina 執行長</h3>
+                        <ul class="star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="evaluation-item">
+                    <img class="user" src="image/user02.jpg" alt="Zoe 活動長">
+                    <p class="user-text">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
+                    <h3 class="user-company">subwhat 行銷公司</h3>
+                    <div class="user-star">
+                        <h3 class="user-name">Zoe 活動長</h3>
+                        <ul class="star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="evaluation-item">
+                    <img class="user" src="image/user03.jpg" alt="HowBig">
+                    <p class="user-text">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
+                    <h3 class="user-company">油土伯</h3>
+                    <div class="user-star">
+                        <h3 class="user-name">HowBig</h3>
+                        <ul class="star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+            <!-- <div class="dot">
                     <button role="button" class="dot-btn gray"></button>
                     <button role="button" class="dot-btn gray"></button>
                     <button role="button" class="dot-btn gray"></button>
                     <button role="button" class="dot-btn yellow"></button>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <h2 class="footer-slogan">\ 美好用戶體驗，從對話開始 /</h2>
-            <a class="featuresCost" href="pricing.html">方案費用</a>
-            <h3 class="right">© 2022 chatTalker. All Rights Reserved.</h3>
-        </footer>
-        <a href="#"><img src="./image/top.png" alt="gotop" class="gotop"></a>
-    </div>
+                </div> -->
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+        <h2 class="footer-slogan">\ 美好用戶體驗，從對話開始 /</h2>
+        <a class="featuresCost" href="pricing.html">方案費用</a>
+        <h3 class="right">© 2022 chatTalker. All Rights Reserved.</h3>
+    </footer>
+    <!--Go Top-->
+    <a href="#"><img src="./image/top.png" alt="gotop" class="gotop"></a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./js/all.js"></script>
 </body>
 
